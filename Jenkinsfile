@@ -11,7 +11,7 @@ pipeline {
         stage("Build"){
             steps {
                 echo "Building the image"
-                cd Django-Notes-App
+                #cd Django-Notes-App
                 sh "docker build -t my-note-app ."
             }
         }
