@@ -5,13 +5,13 @@ pipeline {
         stage("Clone Code"){
             steps {
                 echo "Cloning the code"
-                git url:"https://github.com/SudheerBarakers/Django-Notes-App.git", branch: "main"
+                git url:"https://github.com/KeerthanaPonnaiyan/Django-Notes-App.git: "main"
             }
         }
         stage("Build"){
             steps {
                 echo "Building the image"
-                sh cd cd Django-Notes-App
+                sh cd Django-Notes-App
                 sh "docker build -t my-note-app ."
             }
         }
